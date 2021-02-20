@@ -74,14 +74,22 @@ namespace Лаба2
         Form1 form;
         //Finder find;
 
-        public ISITFactory(Form1 form1)
+        private ISITFactory(Form1 form1)
         {
             dis = new Discipline();
             concreteBuilder = new ConcreteBuilder(dis);
             form = form1;
             //find = new Finder();
         }
-
+        public static ISITFactory GetInstance(Form1 form1)
+        {
+            if (_instance == null)
+            {
+                _instance = new ISITFactory(form1);
+            }
+            return _instance;
+        }
+        private static ISITFactory _instance;
         public ConcreteBuilder CreateDiscipline()
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
@@ -115,14 +123,22 @@ namespace Лаба2
         Form1 form;
         //Finder find;
 
-        public POITFactory(Form1 form1)
+        private POITFactory(Form1 form1)
         {
             dis = new Discipline();
             concreteBuilder = new ConcreteBuilder(dis);
             form = form1;
             //find = new Finder();
         }
-
+        public static POITFactory GetInstance(Form1 form1)
+        {
+            if (_instance == null)
+            {
+                _instance = new POITFactory(form1);
+            }
+            return _instance;
+        }
+        private static POITFactory _instance;
         public ConcreteBuilder CreateDiscipline()
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
@@ -156,14 +172,22 @@ namespace Лаба2
         Form1 form;
         //Finder find;
 
-        public POIBMSFactory(Form1 form1)
+        private POIBMSFactory(Form1 form1)
         {
             dis = new Discipline();
             concreteBuilder = new ConcreteBuilder(dis);
             form = form1;
             //find = new Finder();
         }
-
+        public static POIBMSFactory GetInstance(Form1 form1)
+        {
+            if (_instance == null)
+            {
+                _instance = new POIBMSFactory(form1);
+            }
+            return _instance;
+        }
+        private static POIBMSFactory _instance;
         public ConcreteBuilder CreateDiscipline()
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
@@ -197,14 +221,22 @@ namespace Лаба2
         Form1 form;
         //Finder find;
 
-        public DEWPFactory(Form1 form1)
+        private DEWPFactory(Form1 form1)
         {
             dis = new Discipline();
             concreteBuilder = new ConcreteBuilder(dis);
             form = form1;
             //find = new Finder();
         }
-
+        public static DEWPFactory GetInstance(Form1 form1)
+        {
+            if (_instance == null)
+            {
+                _instance = new DEWPFactory(form1);
+            }
+            return _instance;
+        }
+        private static DEWPFactory _instance;
         public ConcreteBuilder CreateDiscipline()
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));

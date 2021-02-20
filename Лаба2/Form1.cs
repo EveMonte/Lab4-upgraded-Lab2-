@@ -30,17 +30,17 @@ namespace Лаба2
             switch (key)
             {
                 case "ИСиТ":
-                    discipline = (new Client().ClientMethod(new ISITFactory(this))).GetResult();
+                    discipline = (new Client().ClientMethod(ISITFactory.GetInstance(this))).GetResult();
                     break;
-                /*case "ПОИТ":
-                    new Client().ClientMethod(new POITFactory());
+                case "ПОИТ":
+                    discipline = (new Client().ClientMethod(POITFactory.GetInstance(this))).GetResult();
                     break;
                 case "ПОИБМС":
-                    new Client().ClientMethod(new POIBMSFactory());
+                    discipline = (new Client().ClientMethod(POIBMSFactory.GetInstance(this))).GetResult();
                     break;
                 case "ДЭиВИ":
-                    new Client().ClientMethod(new DEWPFactory());
-                    break;*/
+                    discipline = (new Client().ClientMethod(DEWPFactory.GetInstance(this))).GetResult();
+                    break;
                 default: discipline = new Discipline();
                     break;
             }

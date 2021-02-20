@@ -2,23 +2,65 @@
 <ArrayOfDiscipline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Discipline>
     <lecturer>
-      <Chair>Паттерны</Chair>
-      <SecondName>Охх</SecondName>
+      <Chair>Высшей математики</Chair>
+      <SecondName>Асмыкович</SecondName>
       <Name />
-      <Patronymic>Эти</Patronymic>
-      <Auditory>333</Auditory>
+      <Patronymic>Кузьмич</Patronymic>
+      <Auditory>302</Auditory>
     </lecturer>
     <listOfLiterature>
-      <Name>Ужас</Name>
-      <Author>Просто</Author>
-      <date>2021-02-20T21:01:39</date>
+      <Name>Высшая Математика</Name>
+      <Author>Марченко</Author>
+      <date>2019-10-08T22:49:37</date>
     </listOfLiterature>
-    <Name>Матан</Name>
+    <Name>Математика</Name>
+    <Semestr>2</Semestr>
+    <Year>1</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>1</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Физики</Chair>
+      <SecondName>Бобрович</SecondName>
+      <Name />
+      <Patronymic>Георгиевич</Patronymic>
+      <Auditory>204</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Практикум</Name>
+      <Author>Не важно</Author>
+      <date>2019-07-24T22:49:37</date>
+    </listOfLiterature>
+    <Name>Физика</Name>
     <Semestr>1</Semestr>
+    <Year>1</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>20</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Дизайна</Chair>
+      <SecondName>Новосельская</SecondName>
+      <Name />
+      <Patronymic>Отчество</Patronymic>
+      <Auditory>110</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Метода</Name>
+      <Author>Не знаю</Author>
+      <date>2017-03-24T22:49:37</date>
+    </listOfLiterature>
+    <Name>КГиД</Name>
+    <Semestr>2</Semestr>
     <Year>2</Year>
     <Speciality />
-    <NumberOfLections>6</NumberOfLections>
-    <NumberOfLaboratories>6</NumberOfLaboratories>
-    <TypeOfControl>Offset</TypeOfControl>
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>20</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
   </Discipline>
 </ArrayOfDiscipline>
