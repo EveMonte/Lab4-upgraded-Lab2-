@@ -26,12 +26,13 @@ namespace Лаба2
         private void SendAll_Click(object sender, EventArgs e)
         {
             string key = Speciality.SelectedItem.ToString();
+            Discipline discipline;
             switch (key)
             {
                 case "ИСиТ":
-                    new Client().ClientMethod(new ISITFactory(this));
+                    discipline = (new Client().ClientMethod(new ISITFactory(this))).GetResult();
                     break;
-                case "ПОИТ":
+                /*case "ПОИТ":
                     new Client().ClientMethod(new POITFactory());
                     break;
                 case "ПОИБМС":
@@ -39,13 +40,15 @@ namespace Лаба2
                     break;
                 case "ДЭиВИ":
                     new Client().ClientMethod(new DEWPFactory());
+                    break;*/
+                default: discipline = new Discipline();
                     break;
             }
             //new Client().ClientMethod();
 
-            Discipline discipline = new Discipline();
+            //Discipline discipline = 
             #region Discipline form
-            try
+            /*try
             {
                 if (DisciplineName.Text != "")
                 {
@@ -89,11 +92,11 @@ namespace Лаба2
             catch (Exception ex)
             {
                 ErrorLabel.Text = ex.Message;
-            }
+            }*/
             #endregion
 
             #region Lecturer form
-            try
+            /*try
             {
                 if (SecondName.Text != "")
                 {
@@ -238,7 +241,7 @@ namespace Лаба2
                 ErrorLabel.Text = ex.Message;
             }
             discipline.listOfLiterature = book;
-
+            */
             #endregion
 
             listOfDisciplines.Add(discipline);

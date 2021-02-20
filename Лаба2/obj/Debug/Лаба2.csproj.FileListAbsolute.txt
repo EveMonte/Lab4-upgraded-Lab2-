@@ -9,3 +9,14 @@ C:\Users\User\Desktop\ООП_Весна\Лаба2\Лаба2\obj\Debug\Лаба2.
 C:\Users\User\Desktop\ООП_Весна\Лаба2\Лаба2\obj\Debug\Лаба2.exe
 C:\Users\User\Desktop\ООП_Весна\Лаба2\Лаба2\obj\Debug\Лаба2.pdb
 C:\Users\User\Desktop\ООП_Весна\Лаба2\Лаба2\obj\Debug\Лаба2.myForm.resources
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\bin\Debug\Лаба2.exe.config
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\bin\Debug\Лаба2.exe
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\bin\Debug\Лаба2.pdb
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.Form1.resources
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.myForm.resources
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.Properties.Resources.resources
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.exe
+C:\Users\User\Desktop\ООП_Весна\Лаба4\Лаба2\obj\Debug\Лаба2.pdb

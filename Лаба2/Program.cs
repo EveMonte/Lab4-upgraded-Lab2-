@@ -72,9 +72,9 @@ namespace Лаба2
     }
     interface IAbstractFactory
     {
-        IAbstractDiscipline CreateDiscipline();
-        IAbstractLecturer CreateLecturer();
-        IAbstractBook CreateBook();
+        ConcreteBuilder CreateDiscipline();
+        ConcreteBuilder CreateLecturer();
+        ConcreteBuilder CreateBook();
     }
 
     interface IAbstractDiscipline
@@ -135,46 +135,105 @@ namespace Лаба2
         public DateTime date { get; set; }
     }
 
-    static class Finder 
+    public static class Finder 
     { 
-        static public string FindElementsInForm(string elementsName, string elementsType, Form1 form)
+        public static string FindElementsInForm(string elementsName, string elementsType, Form1 form)
         {
             switch (elementsType)
             {
                 case "TextBox":
-                    foreach(TextBox textBox in form.Controls)
+                    foreach(object textBox in form.Controls)
                     {
-                        if(textBox.Name == elementsName)
+                        if (textBox is TextBox)
                         {
-                            return textBox.Text;
+                            TextBox newTextBox = (TextBox)textBox;
+                            if (newTextBox.Name == elementsName)
+                            {
+                                return newTextBox.Text;
+                            }
+
                         }
                     }
 
                     break;
                 case "ComboBox":
-                    foreach (ComboBox comboBox in form.Controls)
+                    foreach (object comboBox in form.Controls)
                     {
-                        if (comboBox.Name == elementsName)
+                        if (comboBox is ComboBox)
                         {
-                            return comboBox.Text;
+                            ComboBox newComboBox = (ComboBox)comboBox;
+                            if (newComboBox.Name == elementsName)
+                            {
+                                return newComboBox.Text;
+                            }
                         }
+                        
                     }
                     break;
                 case "ListBox":
-                    foreach (ListBox listBox in form.Controls)
+                    foreach (object listBox in form.Controls)
                     {
-                        if (listBox.Name == elementsName)
+                        if (listBox is ListBox)
                         {
-                            return listBox.SelectedItem.ToString();
+                            ListBox newListBox = (ListBox)listBox;
+                            if (newListBox.Name == elementsName)
+                            {
+                                return newListBox.SelectedItem.ToString();
+                            }
                         }
+                        
                     }
                     break;
                 case "NumericUpDown":
-                    foreach (NumericUpDown numericUpDown in form.Controls)
+                    foreach (object numericUpDown in form.Controls)
                     {
-                        if (numericUpDown.Name == elementsName)
+                        if (numericUpDown is NumericUpDown)
                         {
-                            return numericUpDown.Text;
+                            NumericUpDown newNumericUpDown = (NumericUpDown)numericUpDown;
+                            if (newNumericUpDown.Name == elementsName)
+                            {
+                                return newNumericUpDown.Text;
+                            }
+                        }
+                        
+                    }
+                    break;
+                case "DateTimePicker":
+                    foreach (object dateTimePicker in form.Controls)
+                    {
+                        if (dateTimePicker is DateTimePicker)
+                        {
+                            DateTimePicker newDateTimePicker = (DateTimePicker)dateTimePicker;
+                            if (newDateTimePicker.Name == elementsName)
+                            {
+                                return newDateTimePicker.Value.ToString();
+                            }
+                        }
+                    }
+                    break;
+                case "RadioButton":
+                    foreach (object radioButton in form.Controls)
+                    {
+                        if (radioButton is RadioButton)
+                        {
+                            RadioButton newRadioButton = (RadioButton)radioButton;
+                            if (newRadioButton.Checked)
+                            {
+                                return newRadioButton.Name;
+                            }
+                        }
+                    }
+                    break;
+                case "TrackBar":
+                    foreach (object trackBar in form.Controls)
+                    {
+                        if (trackBar is TrackBar)
+                        {
+                            TrackBar newTrackBar = (TrackBar)trackBar;
+                            if (newTrackBar.Name == elementsName)
+                            {
+                                return newTrackBar.Value.ToString();
+                            }
                         }
                     }
                     break;
@@ -189,36 +248,40 @@ namespace Лаба2
         Discipline dis;
         ConcreteBuilder concreteBuilder;
         Form1 form;
+        //Finder find;
+
         public ISITFactory(Form1 form1)
         {
             dis = new Discipline();
             concreteBuilder = new ConcreteBuilder(dis);
             form = form1;
+            //find = new Finder();
         }
 
-        public IAbstractDiscipline CreateDiscipline()
+        public ConcreteBuilder CreateDiscipline()
         {
-            concreteBuilder.BuildDisciplineNameAndTypePart(form.);
-            concreteBuilder.BuildNumbersPart();
-            concreteBuilder.BuildProgressAndSpecialityPart();
+            concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
+            concreteBuilder.BuildNumbersPart(Int32.Parse(Finder.FindElementsInForm("NumberOfLections", "TrackBar", form)), Int32.Parse(Finder.FindElementsInForm("NumberOfLaboratories", "TrackBar", form)));
+            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "TextBox", form));
+            return concreteBuilder;
+        }
+        public ConcreteBuilder CreateLecturer()
+        {
+
+            return concreteBuilder;
 
         }
-        public IAbstractLecturer CreateLecturer()
+        public ConcreteBuilder CreateBook()
         {
-            return new Lecturer();
-
-        }
-        public IAbstractBook CreateBook()
-        {
-            return new Book();
+            return concreteBuilder;
 
         }
     }
-    class POITFactory : IAbstractFactory
+    /*class POITFactory : IAbstractFactory
     {
-        public IAbstractDiscipline CreateDiscipline()
+        public ConcreteBuilder CreateDiscipline()
         {
-            return new Discipline();
+            return new ConcreteBuilder();
         }
         public IAbstractLecturer CreateLecturer()
         {
@@ -231,9 +294,9 @@ namespace Лаба2
     }
     class POIBMSFactory : IAbstractFactory
     {
-        public IAbstractDiscipline CreateDiscipline()
+        public void CreateDiscipline()
         {
-            return new Discipline();
+            //return new Discipline();
         }
         public IAbstractLecturer CreateLecturer()
         {
@@ -246,9 +309,9 @@ namespace Лаба2
     }
     class DEWPFactory : IAbstractFactory
     {
-        public IAbstractDiscipline CreateDiscipline()
+        public void CreateDiscipline()
         {
-            return new Discipline();
+            //return new Discipline();
 
         }
         public IAbstractLecturer CreateLecturer()
@@ -259,7 +322,7 @@ namespace Лаба2
         {
             return new Book();
         }
-    }
+    }*/
 
     [Serializable]
     public class Lecturer : IAbstractLecturer
@@ -316,11 +379,12 @@ namespace Лаба2
     }
     class Client
     {
-        public void ClientMethod(IAbstractFactory factory)
+        public ConcreteBuilder ClientMethod(IAbstractFactory factory)
         {
-            var productLecturer = factory.CreateLecturer();
-            var productBook = factory.CreateBook();
-            var productDiscipline = factory.CreateDiscipline();
+            //factory.CreateLecturer();
+            //var productBook = factory.CreateBook();
+            factory.CreateDiscipline();
+            return factory.CreateDiscipline();
         }
     }
     static class Program
