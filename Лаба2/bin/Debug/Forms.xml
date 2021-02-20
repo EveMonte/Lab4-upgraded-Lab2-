@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <ArrayOfDiscipline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Discipline>
+    <lecturer>
+      <Chair>Паттерны</Chair>
+      <SecondName>Охх</SecondName>
+      <Name />
+      <Patronymic>Эти</Patronymic>
+      <Auditory>333</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Ужас</Name>
+      <Author>Просто</Author>
+      <date>2021-02-20T21:01:39</date>
+    </listOfLiterature>
     <Name>Матан</Name>
     <Semestr>1</Semestr>
     <Year>2</Year>
