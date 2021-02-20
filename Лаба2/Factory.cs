@@ -94,12 +94,12 @@ namespace Лаба2
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
             concreteBuilder.BuildNumbersPart(Int32.Parse(Finder.FindElementsInForm("NumberOfLections", "TrackBar", form)), Int32.Parse(Finder.FindElementsInForm("NumberOfLaboratories", "TrackBar", form)));
-            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "TextBox", form));
+            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "ListBox", form));
             return concreteBuilder;
         }
         public ConcreteBuilder CreateLecturer()
         {
-            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("Name", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
+            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("NameOfLecturer", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
             concreteBuilder.BuildLecturerAnotherPart(Finder.FindElementsInForm("Chair", "TextBox", form), Finder.FindElementsInForm("Auditory", "TextBox", form));
             return concreteBuilder;
 
@@ -143,12 +143,12 @@ namespace Лаба2
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
             concreteBuilder.BuildNumbersPart(Int32.Parse(Finder.FindElementsInForm("NumberOfLections", "TrackBar", form)), Int32.Parse(Finder.FindElementsInForm("NumberOfLaboratories", "TrackBar", form)));
-            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "TextBox", form));
+            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "ListBox", form));
             return concreteBuilder;
         }
         public ConcreteBuilder CreateLecturer()
         {
-            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("Name", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
+            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("NameOfLecturer", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
             concreteBuilder.BuildLecturerAnotherPart(Finder.FindElementsInForm("Chair", "TextBox", form), Finder.FindElementsInForm("Auditory", "TextBox", form));
             return concreteBuilder;
 
@@ -197,7 +197,7 @@ namespace Лаба2
         }
         public ConcreteBuilder CreateLecturer()
         {
-            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("Name", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
+            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("NameOfLecturer", "TextBox", form), Finder.FindElementsInForm("Patronymic", "ListBox", form));
             concreteBuilder.BuildLecturerAnotherPart(Finder.FindElementsInForm("Chair", "TextBox", form), Finder.FindElementsInForm("Auditory", "TextBox", form));
             return concreteBuilder;
 
@@ -241,12 +241,12 @@ namespace Лаба2
         {
             concreteBuilder.BuildDisciplineNameAndTypePart(Finder.FindElementsInForm("DisciplineName", "TextBox", form), Finder.FindElementsInForm("", "RadioButton", form));
             concreteBuilder.BuildNumbersPart(Int32.Parse(Finder.FindElementsInForm("NumberOfLections", "TrackBar", form)), Int32.Parse(Finder.FindElementsInForm("NumberOfLaboratories", "TrackBar", form)));
-            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "TextBox", form));
+            concreteBuilder.BuildProgressAndSpecialityPart(Int32.Parse(Finder.FindElementsInForm("Year", "NumericUpDown", form)), Int32.Parse(Finder.FindElementsInForm("Semestr", "ComboBox", form)), Finder.FindElementsInForm("Speciality", "ListBox", form));
             return concreteBuilder;
         }
         public ConcreteBuilder CreateLecturer()
         {
-            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("Name", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
+            concreteBuilder.BuildLecturerFIOPart(Finder.FindElementsInForm("SecondName", "TextBox", form), Finder.FindElementsInForm("NameOfLecturer", "TextBox", form), Finder.FindElementsInForm("Patronymic", "TextBox", form));
             concreteBuilder.BuildLecturerAnotherPart(Finder.FindElementsInForm("Chair", "TextBox", form), Finder.FindElementsInForm("Auditory", "TextBox", form));
             return concreteBuilder;
 

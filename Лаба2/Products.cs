@@ -65,5 +65,29 @@ namespace Лаба2
         {
             listOfLiterature = (Book)abstractBook;
         }
+        public Discipline ShallowCopy()
+        {
+            return (Discipline)this.MemberwiseClone();
+        }
+
+        public Discipline DeepCopy()
+        {
+            Discipline clone = (Discipline)this.MemberwiseClone();
+            clone.lecturer = new Lecturer();
+            clone.listOfLiterature = new Book();
+            clone.Name = String.Copy(Name);
+            clone.Speciality = String.Copy(Speciality);
+            clone.TypeOfControl = String.Copy(TypeOfControl);
+            clone.lecturer.SecondName = String.Copy(lecturer.SecondName);
+            clone.lecturer.Name = String.Copy(lecturer.Name);
+            clone.lecturer.Patronymic = String.Copy(lecturer.Patronymic);
+            clone.lecturer.Chair = String.Copy(lecturer.Chair);
+            clone.lecturer.Auditory = String.Copy(lecturer.Auditory);
+            clone.listOfLiterature.Author = String.Copy(listOfLiterature.Author);
+            clone.listOfLiterature.Name = String.Copy(listOfLiterature.Name);
+
+
+            return clone;
+        }
     }
 }

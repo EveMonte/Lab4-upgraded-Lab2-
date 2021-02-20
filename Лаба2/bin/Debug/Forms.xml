@@ -4,14 +4,14 @@
     <lecturer>
       <Chair>Высшей математики</Chair>
       <SecondName>Асмыкович</SecondName>
-      <Name />
+        <Name>Иван</Name>
       <Patronymic>Кузьмич</Patronymic>
       <Auditory>302</Auditory>
     </lecturer>
     <listOfLiterature>
-      <Name>Высшая Математика</Name>
+      <Name>Высшая математика</Name>
       <Author>Марченко</Author>
-      <date>2019-10-08T22:49:37</date>
+      <date>2014-01-09T23:07:51</date>
     </listOfLiterature>
     <Name>Математика</Name>
     <Semestr>2</Semestr>
@@ -23,16 +23,100 @@
   </Discipline>
   <Discipline>
     <lecturer>
-      <Chair>Физики</Chair>
+      <Chair>Высшей математики</Chair>
+      <SecondName>Асмыкович</SecondName>
+        <Name>Иван</Name>
+      <Patronymic>Кузьмич</Patronymic>
+      <Auditory>302</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Высшая математика</Name>
+      <Author>Марченко</Author>
+      <date>2014-01-09T23:07:51</date>
+    </listOfLiterature>
+    <Name>Математика</Name>
+    <Semestr>2</Semestr>
+    <Year>1</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>1</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Высшей математики</Chair>
+      <SecondName>Асмыкович</SecondName>
+        <Name>Иван</Name>
+      <Patronymic>Кузьмич</Patronymic>
+      <Auditory>302</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Высшая математика</Name>
+      <Author>Марченко</Author>
+      <date>0001-01-01T00:00:00</date>
+    </listOfLiterature>
+    <Name>Математика</Name>
+    <Semestr>2</Semestr>
+    <Year>1</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>1</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Физика</Chair>
       <SecondName>Бобрович</SecondName>
-      <Name />
+        <Name>Олег</Name>
       <Patronymic>Георгиевич</Patronymic>
-      <Auditory>204</Auditory>
+      <Auditory>220</Auditory>
     </lecturer>
     <listOfLiterature>
       <Name>Практикум</Name>
-      <Author>Не важно</Author>
-      <date>2019-07-24T22:49:37</date>
+      <Author>Бобрович</Author>
+      <date>2018-03-14T23:07:51</date>
+    </listOfLiterature>
+    <Name>Физика</Name>
+    <Semestr>1</Semestr>
+    <Year>1</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>20</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Физика</Chair>
+      <SecondName>Бобрович</SecondName>
+        <Name>Олег</Name>
+      <Patronymic>Георгиевич</Patronymic>
+      <Auditory>220</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Практикум</Name>
+      <Author>Бобрович</Author>
+      <date>2018-03-14T23:07:51</date>
+    </listOfLiterature>
+    <Name>Физика</Name>
+    <Semestr>1</Semestr>
+    <Year>1</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>20</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Физика</Chair>
+      <SecondName>Бобрович</SecondName>
+        <Name>Олег</Name>
+      <Patronymic>Георгиевич</Patronymic>
+      <Auditory>220</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Практикум</Name>
+      <Author>Бобрович</Author>
+      <date>0001-01-01T00:00:00</date>
     </listOfLiterature>
     <Name>Физика</Name>
     <Semestr>1</Semestr>
@@ -46,14 +130,56 @@
     <lecturer>
       <Chair>Дизайна</Chair>
       <SecondName>Новосельская</SecondName>
-      <Name />
+        <Name>Имя</Name>
       <Patronymic>Отчество</Patronymic>
-      <Auditory>110</Auditory>
+      <Auditory>104</Auditory>
     </lecturer>
     <listOfLiterature>
-      <Name>Метода</Name>
-      <Author>Не знаю</Author>
-      <date>2017-03-24T22:49:37</date>
+      <Name>Методичка</Name>
+      <Author>Новосельская</Author>
+      <date>2019-08-22T23:07:51</date>
+    </listOfLiterature>
+    <Name>КГиД</Name>
+    <Semestr>2</Semestr>
+    <Year>2</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>20</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Дизайна</Chair>
+      <SecondName>Новосельская</SecondName>
+        <Name>Имя</Name>
+      <Patronymic>Отчество</Patronymic>
+      <Auditory>104</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Методичка</Name>
+      <Author>Новосельская</Author>
+      <date>2019-08-22T23:07:51</date>
+    </listOfLiterature>
+    <Name>КГиД</Name>
+    <Semestr>2</Semestr>
+    <Year>2</Year>
+    <Speciality />
+    <NumberOfLections>20</NumberOfLections>
+    <NumberOfLaboratories>20</NumberOfLaboratories>
+    <TypeOfControl>Exam</TypeOfControl>
+  </Discipline>
+  <Discipline>
+    <lecturer>
+      <Chair>Дизайна</Chair>
+      <SecondName>Новосельская</SecondName>
+        <Name>Имя</Name>
+      <Patronymic>Отчество</Patronymic>
+      <Auditory>104</Auditory>
+    </lecturer>
+    <listOfLiterature>
+      <Name>Методичка</Name>
+      <Author>Новосельская</Author>
+      <date>0001-01-01T00:00:00</date>
     </listOfLiterature>
     <Name>КГиД</Name>
     <Semestr>2</Semestr>
